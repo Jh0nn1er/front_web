@@ -1,0 +1,324 @@
+body{
+    padding: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.max-container {
+    width: 100%;
+    background-color: black;
+    padding: 0; /* Ajusta el espacio interior según tus necesidades */
+    box-sizing: border-box;
+    color: white;
+}
+
+.banner-section {
+    position: absolute;
+    width: 100%;
+    height: 800px; /* Ajusta la altura de la imagen de fondo proporcionalmente al tamaño de la pantalla */
+    margin: 0;
+    background-image: url('./images/BANNER.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    opacity: 1;
+    border-radius: 0, 0, 0, 90%;
+}
+
+.reset-password {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    height: 30%;
+    width: 74%;
+    text-align: center;
+    z-index: 3;
+    background-color: #00F1C7;
+    border-radius: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.font_black{
+    position: absolute;
+    top: 86%;
+    left: 13%;
+    height: 85%;
+    width: 74%;
+    background-color: rgba(65, 65, 65, 0.2);
+    border-radius: 40px 0;
+    padding: 10px;
+}
+.password {
+    font: 5.5vw/64px Arial Black;
+    color: #000000; /* Color negro para "tu contraseña" */
+}
+.restablecer {
+    font: 5.5vw/64px Arial Black;
+    color: #FFFFFF; /* Color blanco para "Restablecer" */
+}
+
+.banner-text {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    transform: translate(10%, -20%);
+    border-radius: 40px, 0px;
+    z-index: 1;
+}
+
+.text_title{
+    position: absolute;
+    font: normal normal bold 2.5vw/28px Arial;
+    color: #FFFFFF;
+    text-align: center;
+    top: 5%;
+    left: 0;
+    width: 100%;
+}
+.text_subtitle{
+    position: absolute;
+    top: 12%;
+    left: 6%;
+    width: 87%;
+    height: 6px;
+    font: normal normal normal 2.5vw / 3vw Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.text{
+    position: absolute;
+    top: 40%;
+    left: 9%;
+    width: 89%;
+    height: 17px;
+    font: normal normal normal 2.0vw/28px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+button{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    width: 78%;
+    height: 10%;
+    background-color: #00F1C7;
+    font: normal normal bold 2.5vw/28px Arial;
+    text-align: center;
+    transform: translateY(-50%);
+    border-radius: 60px;
+    z-index: 2;
+}
+.aqui{
+    color: #ffffff;
+}
+.button_recuerda img {
+    position: absolute;
+    top: 92%;
+    right: 122px;
+    transform: translate(50%, -42%);
+    width: 244px;
+    height: 62px;
+}
+.vector{
+    position: absolute;
+    top: -11%;
+    right: 168px;
+    transform: translate(50%, -42%);
+    width: 410px;
+    height: 78%;
+    z-index: 0;
+}
+.text2{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 89%;
+    height: 20px;
+    font: normal normal normal 2.5vw/3vw Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.text3 {
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    width: 85%;
+    height: 17px;
+    font: normal normal bold 2.5vw/3vw Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 104px;
+    background-color:white;
+}
+
+.logo {
+    width: 149px;
+    height: 43px;
+}
+
+.green-background {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    background-color: #00F1C7; /* Ajusta el color de fondo según tus necesidades */
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    letter-spacing: 0;
+    font: normal normal bold 30px/58px Arial;
+    color: white;
+}
+
+.dark-background {
+    background-color: #00F1C7; /* Ajusta el color de fondo según tus necesidades */
+}
+.footer {
+    position: absolute;
+    background-color: #161616;
+    color: white;
+    z-index:2;
+    top: 200%;
+    left: 1px;
+    width: 100%;
+    height: 45vh;
+}
+
+.footer-top {
+    border-bottom: 1px solid #414141;
+    padding-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font: normal normal normal 16px/28px Arial;
+
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.border-grey {
+    border-color: #414141;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+.social-icons {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    
+}
+.hover-text-primary{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hover-text-primary:hover {
+    color: var(white); /* Ajusta el color primario según tus necesidades */
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    color:#00F1C7;
+}
+
+.hover-underline-offset-4:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Ajusta el offset según tus necesidades */
+}
+.font-black {
+    font-weight: bold; /* Establece la fuente en negrita */
+}
+.justify-between {
+    justify-content: space-between; /* Alinea los elementos a ambos lados */
+}
+
+
+.hover-text-primary:hover {
+    color: var(--primary-color); /* Ajusta el color primario según tus necesidades al pasar el mouse */
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.hover-underline-offset-4:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Ajusta el offset según tus necesidades al pasar el mouse */
+}
+.footer-title{
+    margin-left: 10px;
+    font: normal normal bold 12px/28px Arial;
+    color: #FFFFFF;
+}
+.footer-link{
+    margin-left: 10px;
+    font: normal normal normal 11px/28px Arial;
+    top: 10px;
+    color: #FFFFFF;
+}
+.items-end {
+    align-items: center; /* Alinea los elementos al final del contenedor */
+}
+
+.justify-end {
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+}
+
+.text-sm p {
+    margin-bottom: 5px; /* Ajusta el margen inferior según tus necesidades */
+}
